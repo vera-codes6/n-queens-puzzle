@@ -9,7 +9,6 @@
 #define QUEEN_SOLVER_H
 #include <vector>
 
-
 class QueenSolver {
 public:
     QueenSolver();
