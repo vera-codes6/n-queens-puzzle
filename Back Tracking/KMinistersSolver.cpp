@@ -36,7 +36,9 @@ void KMinistersSolver::kMinisterBacktracking(int k, int row) {
         ++solutions;
         return;
     }
+
     // Explore possible positions for the current minister
+    
     for (int col = 0; col < k; ++col) {
         if (isSafe(row, col)) {
             board[row] = col;                                                        // Place minister at a safe position and move to the next row
