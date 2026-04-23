@@ -42,6 +42,7 @@ void KMinistersSolver::kMinisterBacktracking(int k, int row) {
         if (isSafe(row, col)) {
             board[row] = col;                                                        // Place minister at a safe position and move to the next row
             kMinisterBacktracking(k, row + 1);
+            
             board[row] = -1;                                                         // Reset for backtracking
         }
     }
